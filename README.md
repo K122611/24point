@@ -1,5 +1,4 @@
 Here is a Sudoku and 24 point Game
-
 ```markdown
 # 🧩 Sudoku & 24 Game – Free Online Logic Puzzles
 
@@ -9,7 +8,7 @@ Here is a Sudoku and 24 point Game
 
 > A responsive, ad‑free web‑based puzzle collection featuring **Sudoku** (with scoring) and the **24 Game**. No downloads, no registration – just pure logic.
 
-🔗 **Play now:** [https://qwwpwyp.dpdns.org/](https://qwwpwyp.dpdns.org/)
+🔗 **Play now:** [https://qwwpwyp.dpdns.org/hello.html](https://qwwpwyp.dpdns.org/hello.html)
 
 ---
 
@@ -110,7 +109,7 @@ Distributed under the **MIT License**. See `LICENSE` for more information.
 
 > 一个响应式的、无广告的网页益智游戏合集，包含**数独**（带得分系统）和**24点游戏**。无需下载，无需注册，即点即玩。
 
-🔗 **立即游玩：** [https://qwwpwyp.dpdns.org/](https://qwwpwyp.dpdns.org/)
+🔗 **立即游玩：** [https://qwwpwyp.dpdns.org/hello.html](https://qwwpwyp.dpdns.org/hello.html)
 
 ---
 
@@ -201,10 +200,3 @@ Distributed under the **MIT License**. See `LICENSE` for more information.
 ⭐ **如果你喜欢这些游戏，请在 GitHub 上给个 Star！**  
 🐛 发现问题？[提交 Issue](https://github.com/你的用户名/你的仓库名/issues)
 ```
-
-### 使用方法
-1. 将以上内容复制到您的 GitHub 仓库根目录下的 `README.md` 文件中。
-2. 将 `your-username` 和 `your-repo-name` 替换为您的实际 GitHub 用户名和仓库名称（**英文和中文部分都要改**）。
-3. 如果您没有 `LICENSE` 文件，可以删除许可证徽章或根据需要修改许可证文本。
-
-这样，无论是英文用户还是中文用户，都能在 GitHub 仓库页面上获得良好的阅读体验。
