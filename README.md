@@ -3,10 +3,6 @@
 ```markdown
 # 🧩 数独 & 24点游戏 – 免费在线逻辑挑战
 
-[![网站](https://img.shields.io/badge/网站-在线-green)](https://qwwpwyp.dpdns.org/)
-[![GitHub 许可证](https://img.shields.io/badge/许可证-MIT-blue.svg)](LICENSE)
-[![技术栈](https://img.shields.io/badge/技术-HTML%2FCSS%2FJS-orange)]()
-
 > 一个响应式的、无广告的网页益智游戏合集，包含**数独**（带得分系统）和**24点游戏**。无需下载，无需注册，即点即玩。
 
 🔗 **立即游玩：** [https://qwwpwyp.dpdns.org/](https://qwwpwyp.dpdns.org/)
