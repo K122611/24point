@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>游戏中心 | 数独 & 24点</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            background: linear-gradient(145deg, #1a2a3a 0%, #0f1a24 100%);
+            font-family: 'Segoe UI', 'Poppins', 'Roboto', system-ui, -apple-system, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 24px;
+        }
+
+        /* 主容器 */
+        .portal {
+            max-width: 1300px;
+            width: 100%;
+        }
+
+        /* 头部 */
+        .header {
+            text-align: center;
+            margin-bottom: 56px;
+        }
+
+        .header h1 {
+            font-size: 3.5rem;
+            background: linear-gradient(135deg, #F9E0A0, #E2B86B);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            letter-spacing: 2px;
+            text-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            margin-bottom: 12px;
+        }
+
+        .header p {
+            color: #bcd0e0;
+            font-size: 1.2rem;
+            font-weight: 400;
+            border-top: 1px dashed rgba(255,215,150,0.4);
+            display: inline-block;
+            padding-top: 12px;
+        }
+
+        /* 卡片网格 */
+        .game-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px;
+            margin: 20px 0 48px;
+        }
+
+        /* 卡片样式 */
+        .game-card {
+            background: rgba(255, 248, 235, 0.95);
+            backdrop-filter: blur(2px);
+            border-radius: 56px;
+            width: 320px;
+            max-width: 90vw;
+            padding: 28px 20px 36px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.35s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+            box-shadow: 0 20px 30px -12px rgba(0, 0, 0, 0.4);
+            border: 1px solid rgba(255,215,150,0.6);
+            text-decoration: none;
+            display: block;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .game-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 8px;
+            background: linear-gradient(90deg, #e8a735, #c97e2a);
+            transition: height 0.2s;
+        }
+
+        .game-card:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 32px 40px -14px rgba(0, 0, 0, 0.5);
+            background: #fffef7;
+        }
+
+        .game-card:active {
+            transform: translateY(-4px);
+            transition: 0.05s;
+        }
+
+        /* 图标区 */
+        .icon {
+            font-size: 5rem;
+            margin-bottom: 20px;
+            display: inline-block;
+            background: #f1e5d2;
+            width: 110px;
+            height: 110px;
+            line-height: 110px;
+            border-radius: 60px;
+            box-shadow: inset 0 -2px 0 #ccb690, 0 8px 18px rgba(0,0,0,0.1);
+        }
+
+        .game-card h2 {
+            font-size: 2.1rem;
+            margin: 16px 0 12px;
+            font-weight: 700;
+            background: linear-gradient(145deg, #2c5f2d, #1e3a1e);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .game-card p {
+            color: #5a4a32;
+            font-weight: 500;
+            margin-bottom: 24px;
+            font-size: 0.95rem;
+            padding: 0 12px;
+            line-height: 1.4;
+        }
+
+        .btn-play {
+            background: #3b5e3b;
+            border: none;
+            padding: 10px 28px;
+            border-radius: 60px;
+            font-weight: 600;
+            font-size: 1rem;
+            color: white;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: 0.2s;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            cursor: pointer;
+        }
+
+        .game-card:hover .btn-play {
+            background: #2c6e2c;
+            transform: scale(1.02);
+            letter-spacing: 0.5px;
+        }
+
+        /* 额外装饰 */
+        .footer-note {
+            text-align: center;
+            color: #8aaec0;
+            font-size: 0.85rem;
+            margin-top: 30px;
+            background: rgba(0,0,0,0.3);
+            width: fit-content;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 8px 20px;
+            border-radius: 40px;
+            backdrop-filter: blur(4px);
+        }
+
+        @media (max-width: 720px) {
+            .header h1 {
+                font-size: 2.5rem;
+            }
+            .game-grid {
+                gap: 30px;
+            }
+            .game-card {
+                width: 280px;
+                padding: 20px 16px 28px;
+            }
+            .icon {
+                width: 85px;
+                height: 85px;
+                line-height: 85px;
+                font-size: 4rem;
+            }
+            .game-card h2 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="portal">
+    <div class="header">
+        <h1>🎲 思维游乐场 🧩</h1>
+        <p>选择游戏，挑战大脑极限</p>
+    </div>
+
+    <div class="game-grid">
+        <!-- 数独卡片 -->
+        <a href="https://qwwpwyp.dpdns.org/sudoku.html" class="game-card" id="sudokuLink">
+            <div class="icon">🔢</div>
+            <h2>数独 · Sudoku</h2>
+            <p>经典数字逻辑游戏 · 九宫格推理 · 锻炼专注力</p>
+            <div class="btn-play">🎯 开始游戏 →</div>
+        </a>
+
+        <!-- 24点卡片 -->
+        <a href="https://qwwpwyp.dpdns.org/24PointGame.html" class="game-card" id="game24Link">
+            <div class="icon">➕➖✖️➗</div>
+            <h2>24点 · 24 Game</h2>
+            <p>四张牌，加减乘除，组合出24 · 速度与心算的较量</p>
+            <div class="btn-play">⚡ 开始游戏 →</div>
+        </a>
+    </div>
+
+    <div class="footer-note">
+        💡 点击卡片即可跳转 — 数独 / 24点，快乐烧脑
+    </div>
+</div>
+
+<script>
+    // 确保跳转链接正确：如果当前页面是游戏中心 (例如 index.html)
+    // 并且数独/24点的页面和此文件在同一目录下，直接使用相对路径。
+    // 若有需要自定义路径可修改下方配置（默认同目录）
+    (function() {
+        // 可配置项：如果未来文件位置变化，只需修改这两个常量
+        const SUDOKU_PAGE = "sudoku.html";
+        const GAME24_PAGE = "24PointGame.html";
+
+        const sudokuCard = document.getElementById('sudokuLink');
+        const game24Card = document.getElementById('game24Link');
+
+        // 可选：添加点击埋点或检查文件是否存在？不需要复杂，保持轻量。
+        // 为防止链接被意外覆盖，显式设置href
+        if (sudokuCard) sudokuCard.href = SUDOKU_PAGE;
+        if (game24Card) game24Card.href = GAME24_PAGE;
+
+        // 增加一个小特性：键盘快捷键提示（用户按下 S 跳转数独，按下 T 跳转24点）
+        window.addEventListener('keydown', (e) => {
+            const key = e.key.toLowerCase();
+            if (key === 's') {
+                e.preventDefault();
+                window.location.href = SUDOKU_PAGE;
+            } else if (key === 't') {
+                e.preventDefault();
+                window.location.href = GAME24_PAGE;
+            }
+        });
+    })();
+</script>
+</body>
+</html>
