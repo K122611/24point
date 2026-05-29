@@ -1,5 +1,113 @@
-以下是中文版的 `README.md`，适合直接用于您的 GitHub 仓库。
+Here is a Sudoku and 24 point game.
 
+```markdown
+# 🧩 Sudoku & 24 Game – Free Online Logic Puzzles
+
+[![Website](https://img.shields.io/badge/website-live-brightgreen)](https://qwwpwyp.dpdns.org/)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Made with HTML/CSS/JS](https://img.shields.io/badge/made%20with-HTML%2FCSS%2FJS-orange)]()
+
+> A responsive, ad‑free web‑based puzzle collection featuring **Sudoku** (with scoring) and the **24 Game**. No downloads, no registration – just pure logic.
+
+🔗 **Play now:** [https://qwwpwyp.dpdns.org/](https://qwwpwyp.dpdns.org/)
+
+---
+
+## 🎮 Features
+
+### Sudoku – Classic 9×9 puzzles
+- **Three difficulty levels** – Easy (+1 point), Medium (+3 points), Hard (+5 points)
+- **51 built‑in puzzles** (15 Easy / 20 Medium / 16 Hard) – all verified to have **a unique solution**
+- **Scoring system** – total score persists in your browser (localStorage)
+- **Smart helpers** – conflict highlighting, hint system, and one‑click reset
+- **Keyboard support** – use number keys or on‑screen numpad
+- **Clean UI** – thick 3×3 box borders for better visual clarity
+
+### 24 Game – Mental arithmetic challenge
+- Generate four random numbers and combine them with `+`, `-`, `×`, `÷` to reach 24
+- Instant feedback and solution checking
+
+---
+
+## 🛠️ Tech stack
+
+- **Frontend** – HTML5, CSS3 (Flexbox/Grid), Vanilla JavaScript
+- **Hosting** – GitHub Pages + Cloudflare (CDN & caching)
+- **Persistence** – localStorage for score storage
+- **No external dependencies** – pure, lightweight, and fast
+
+---
+
+## 🚀 Run locally
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/your-username/your-repo-name.git
+   cd your-repo-name
+   ```
+
+2. **Open the game**
+   - Double‑click `index.html` (game hub) or `sudoku.html` / `24PointGame.html` in your browser.
+   - No build steps, no server required.
+
+> 💡 For the best experience, serve with a local HTTP server (e.g., `npx serve .`) to avoid CORS quirks when testing.
+
+---
+
+## 🧠 How puzzles are stored
+
+All Sudoku puzzles are hard‑coded as **81‑digit strings** inside `sudoku.html`. Each string represents a row‑major 9×9 grid where `0` = empty cell.  
+Example:  
+`"208010570..."` →  
+```
+2 0 8 0 1 0 5 7 0
+4 0 1 3 5 0 0 0 0
+...
+```
+
+The built‑in solver (backtracking) guarantees that every puzzle has **exactly one solution**.
+
+---
+
+## 🤝 Contributing
+
+Want to add more puzzles, improve the UI, or fix a bug? Contributions are welcome!
+
+1. Fork the repo
+2. Create a new branch (`git checkout -b feature/your-idea`)
+3. Commit your changes (`git commit -m 'Add some feature'`)
+4. Push to the branch (`git push origin feature/your-idea`)
+5. Open a Pull Request
+
+Please ensure any new Sudoku puzzle has a **unique solution** (you can test it with the built‑in solver).
+
+---
+
+## 📄 License
+
+Distributed under the **MIT License**. See `LICENSE` for more information.
+
+---
+
+## 🙏 Acknowledgements
+
+- Inspired by classic Sudoku and 24 Game
+- Icons and emojis for playful UX
+- Thanks to all playtesters and contributors
+
+---
+
+⭐ **If you enjoy the games, please leave a star on GitHub!**  
+🐛 Found an issue? [Open an issue](https://github.com/your-username/your-repo-name/issues)
+```
+
+### How to use
+1. Copy the content above into a file named `README.md` in the **root directory** of your GitHub repository.
+2. Replace `your-username` and `your-repo-name` with your actual GitHub username and repository name.
+3. If you have a `LICENSE` file, keep the MIT badge; otherwise, you can remove the badge or change the license text.
+
+This README is designed to be both informative and appealing to developers, puzzle lovers, and potential recruiters. It clearly explains the project’s value, technical details, and how others can get involved.
+这是一个数独和24点的游戏
 ```markdown
 # 🧩 数独 & 24点游戏 – 免费在线逻辑挑战
 
