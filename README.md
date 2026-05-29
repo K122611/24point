@@ -1,4 +1,4 @@
-Here is a Sudoku and 24 point game.
+Here is a Sudoku and 24 point Game
 
 ```markdown
 # 🧩 Sudoku & 24 Game – Free Online Logic Puzzles
@@ -99,17 +99,14 @@ Distributed under the **MIT License**. See `LICENSE` for more information.
 
 ⭐ **If you enjoy the games, please leave a star on GitHub!**  
 🐛 Found an issue? [Open an issue](https://github.com/your-username/your-repo-name/issues)
-```
 
-### How to use
-1. Copy the content above into a file named `README.md` in the **root directory** of your GitHub repository.
-2. Replace `your-username` and `your-repo-name` with your actual GitHub username and repository name.
-3. If you have a `LICENSE` file, keep the MIT badge; otherwise, you can remove the badge or change the license text.
+---
 
-This README is designed to be both informative and appealing to developers, puzzle lovers, and potential recruiters. It clearly explains the project’s value, technical details, and how others can get involved.
-这是一个数独和24点的游戏
-```markdown
 # 🧩 数独 & 24点游戏 – 免费在线逻辑挑战
+
+[![网站](https://img.shields.io/badge/网站-在线-green)](https://qwwpwyp.dpdns.org/)
+[![GitHub 许可证](https://img.shields.io/badge/许可证-MIT-blue.svg)](LICENSE)
+[![技术栈](https://img.shields.io/badge/技术-HTML%2FCSS%2FJS-orange)]()
 
 > 一个响应式的、无广告的网页益智游戏合集，包含**数独**（带得分系统）和**24点游戏**。无需下载，无需注册，即点即玩。
 
@@ -207,7 +204,7 @@ This README is designed to be both informative and appealing to developers, puzz
 
 ### 使用方法
 1. 将以上内容复制到您的 GitHub 仓库根目录下的 `README.md` 文件中。
-2. 将 `你的用户名` 和 `你的仓库名` 替换为您实际的 GitHub 用户名和仓库名称。
+2. 将 `your-username` 和 `your-repo-name` 替换为您的实际 GitHub 用户名和仓库名称（**英文和中文部分都要改**）。
 3. 如果您没有 `LICENSE` 文件，可以删除许可证徽章或根据需要修改许可证文本。
 
-这个中文 README 清晰地介绍了项目的亮点、技术细节、本地运行方法以及如何参与贡献，对中文开发者非常友好。
+这样，无论是英文用户还是中文用户，都能在 GitHub 仓库页面上获得良好的阅读体验。
