@@ -8,7 +8,7 @@ Here is a Sudoku and 24 point Game
 
 > A responsive, ad‑free web‑based puzzle collection featuring **Sudoku** (with scoring) and the **24 Game**. No downloads, no registration – just pure logic.
 
-🔗 **Play now:** [https://qwwpwyp.dpdns.org/hello.html](https://qwwpwyp.dpdns.org/hello.html)
+🔗 **Play now:** [https://qwwpwyp.dpdns.org/index.html](https://qwwpwyp.dpdns.org)
 
 ---
 
