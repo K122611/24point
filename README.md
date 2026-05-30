@@ -198,5 +198,5 @@ Distributed under the **MIT License**. See `LICENSE` for more information.
 ---
 
 ⭐ **如果你喜欢这些游戏，请在 GitHub 上给个 Star！**  
-🐛 发现问题？[提交 Issue](https://github.com/你的用户名/你的仓库名/issues)
+🐛 发现问题？[提交 Issue](https://github.com/K122611/mathgame/issues)
 ```
