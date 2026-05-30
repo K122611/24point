@@ -97,7 +97,7 @@ Distributed under the **MIT License**. See `LICENSE` for more information.
 ---
 
 ⭐ **If you enjoy the games, please leave a star on GitHub!**  
-🐛 Found an issue? [Open an issue](https://github.com/your-username/your-repo-name/issues)
+🐛 Found an issue? [Open an issue](https://github.com/K122611/mathgame/issues)
 
 ---
 
@@ -109,7 +109,7 @@ Distributed under the **MIT License**. See `LICENSE` for more information.
 
 > 一个响应式的、无广告的网页益智游戏合集，包含**数独**（带得分系统）和**24点游戏**。无需下载，无需注册，即点即玩。
 
-🔗 **立即游玩：** [https://qwwpwyp.dpdns.org/hello.html](https://qwwpwyp.dpdns.org/hello.html)
+🔗 **立即游玩：** [https://qwwpwyp.dpdns.org](https://qwwpwyp.dpdns.org)
 
 ---
 
